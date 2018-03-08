@@ -1,4 +1,6 @@
 @import "./variables";
 @import "./mixins";
-
-p{color: $color;}
+body {
+  margin: 0;
+  padding: 0;
+}

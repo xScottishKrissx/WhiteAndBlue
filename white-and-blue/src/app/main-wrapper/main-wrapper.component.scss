@@ -1,20 +1,21 @@
 @import "src/sass/variables";
 @import "src/sass/mixins";
 
-body {
-  //background-color: red;
-  margin: 0;
-  padding: 0;
-}
+
 
 .container{
   max-width: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .first-layer {
   height: 100vh;
-  background-color: blue;
-  //background-image: url("../img.jpg");
+  //background-color: blue;
+  background-image: url("/assets/map.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   font-size: 15rem;
   padding: 0;
@@ -23,7 +24,7 @@ body {
 }
 
 .second-layer {
-  background-color: red;
+  background-color: $blue;
   //border: 5px solid black;
   box-shadow: -5px -5px 20px 0 red;
   //height: 100%;
@@ -32,17 +33,34 @@ body {
   top: 100vh;
   width: 100%;
 
-  .content-header{
+  .content-header{margin-top: 0;
     h1{
       margin: 0 auto;
     }
   }
 
+  .testimonials{
+    background-color: $blue;
+    text-align: center;
+    color: white;
+  }
+
+  .text-area-1{
+    background-image: url("/assets/ferrari.jpeg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .text-area-2{}
+  .text-area-3{}
   div {
-    background-color: green;
+    //background-color: green;
     //height: 500px;
     margin: 100px auto 0;
     width: 100%;
+
 
     div {
       background-color: orange;
@@ -53,6 +71,11 @@ body {
       margin: 0 auto;
       max-width: 800px;
       width: 100%;
+
+
+      .image-test{
+      }
+
     }
   }
 }
