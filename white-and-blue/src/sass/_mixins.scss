@@ -1,0 +1,18 @@
+@mixin text-area-style {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+
+}
+
+@mixin generic-background-image-settings {
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+@mixin testimonial-base-styles {
+  padding-bottom: 5rem;
+  padding-top:5em;
+  text-align: center;
+}
