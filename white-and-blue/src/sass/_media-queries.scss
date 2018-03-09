@@ -1,5 +1,44 @@
-@media (min-width: $breakpoint-tablet){
+@media (min-width: $breakpoint-tablet) {
+  .text-area-header {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: $breakpoint-laptop) {
+  .text-area-header {
+    text-align: center;
+  }
 
-  
-  .text-area-header{text-align: center;}
+  .second-layer {
+    .gallery {
+      div {
+        transition: background-position-y $gallery-transition-time;
+        background-position-y: 0;
+
+        &:hover {
+          background-position-y: 10rem;
+          cursor: pointer;
+        }
+
+        &:hover p {
+          opacity: 2.0;
+        }
+
+        p {
+          background-color: rgba(0, 0, 0, 0);
+          color: white;
+          font-size: 1.2rem;
+          height: 100%;
+          opacity: 0;
+          padding-top: 2.5rem;
+          transition: opacity $gallery-transition-time;
+        }
+      }
+    }
+
+    .footer {
+      div {
+        height: 300px;
+      }
+    }
+  }
 }
