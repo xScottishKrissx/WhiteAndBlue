@@ -2,6 +2,15 @@
 @import "src/sass/mixins";
 @import "src/sass/media-queries";
 //*{border:5px solid black}
+h1,h2,h3,h4,h5,h6{
+  font-family: $header-font;
+}
+
+p{
+  font-family: $text-font;
+}
+
+
 
 .container {
   max-width: none;
@@ -38,6 +47,7 @@
 
   .content-header {
     margin-top: 0;
+    font-family: $header-font;
 
     h1 {
       margin: 0 auto;
@@ -75,7 +85,6 @@
   .text-area-2 {
     background-image: url("/assets/tier-1/ferrari.jpeg");
   }
-
   .text-area-3 {
     background-image: url("/assets/tier-2/bmwi8.jpg");
   }
@@ -142,27 +151,27 @@
   }
 
   .events {
-    background-image: url("/assets/gallery/event.jpeg");
+    background-image: url("/assets/gallery/event.jpg");
   }
 
   .family {
-    background-image: url("/assets/gallery/family.jpeg");
+    background-image: url("/assets/gallery/family.jpg");
   }
 
   .tutorials {
-    background-image: url("/assets/gallery/tutorials.jpeg");
+    background-image: url("/assets/gallery/tutorials.jpg");
   }
 
   .youtube {
-    background-image: url("/assets/gallery/youtube.png");
+    background-image: url("/assets/gallery/youtube.jpg");
   }
 
   .instagram {
-    background-image: url("/assets/gallery/instagram.png");
+    background-image: url("/assets/gallery/instagram.jpg");
   }
 
   .twitter {
-    background-image: url("/assets/gallery/twitter.png");
+    background-image: url("/assets/gallery/twitter.jpg");
   }
 }
 //Footer

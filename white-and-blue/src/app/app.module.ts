@@ -10,11 +10,14 @@ import { MainWrapperComponent } from './main-wrapper/main-wrapper.component';
   declarations: [
     AppComponent,
     MainWrapperComponent
+
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
-export class AppModule { }
+export class AppModule { 
+}
