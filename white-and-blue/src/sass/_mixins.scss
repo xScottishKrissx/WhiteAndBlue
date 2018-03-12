@@ -15,3 +15,11 @@
   padding-top:5em;
   text-align: center;
 }
+
+
+@mixin navbar-navitem-border {
+  border-left:1px solid;
+  border-left-color:rgba(255, 255, 255, 0.058823529411764705);
+  border-right: 1px solid;
+  border-right-color: rgba(255, 255, 255, 0.058823529411764705);
+}

@@ -2,6 +2,17 @@
   .text-area-header {
     text-align: center;
   }
+  .carousel{
+      .carousel-control-next, .carousel-control-prev{
+        font-size: 5rem;
+        //box-shadow: -5px -5px 20px 0 $blue;
+        //background-color: red;
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.25);
+
+        }
+      }
+  }
 }
 @media only screen and (min-width: $breakpoint-laptop) {
   .text-area-header {
