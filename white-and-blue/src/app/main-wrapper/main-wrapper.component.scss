@@ -76,6 +76,7 @@ p {
 
       a {
         color: $blue;
+        line-height: 5rem;
       }
     }
   }
@@ -102,6 +103,10 @@ p {
   padding: 0;
   position: fixed;
   width: 100%;
+
+  video{
+    width: 100%;
+  }
 }
 
 .second-layer {
@@ -197,7 +202,7 @@ p {
       }
 
       .fake-6 {
-        background-image: url("/assets/fake-logos/fake-aston-300x300.png");
+        background-image: url("/assets/fake-logos/fake-ford-300x300.png");
       }
     }
   }

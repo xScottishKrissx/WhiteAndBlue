@@ -30,6 +30,44 @@
     text-align: center;
   }
 
+  .navbar-nav{
+      li{
+        text-align: center;
+        &:hover > div{
+          display:block;
+        }
+      }
+        li:nth-child(2){
+          width: 18.6rem;
+
+
+        }
+        li:nth-child(3){
+          width: 22.4rem;
+        }
+        li:nth-child(4){
+          width: 18.4rem;
+        }
+        li:nth-child(5){
+          width: 21.8rem;
+        }
+
+      .dropdown-menu{
+        border-left: 1rem solid $blue;
+        padding: 0;
+        background-color: $white;
+
+        transition: background-color 1s;
+        a{
+          &:hover{
+            background-color: $blue;
+            color:$white !important;
+          }
+        }
+      }
+    }
+
+
   .second-layer {
     .gallery {
       div {
