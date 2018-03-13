@@ -1,12 +1,18 @@
 @import "src/sass/variables";
 @import "src/sass/mixins";
-@import "src/sass/media-queries";
-//*{border:5px solid black}
-h1,h2,h3,h4,h5,h6{
+@import "src/sass/media-queries"; //*{border:5px solid black}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $header-font;
 }
 
-p,a{
+a,
+p {
   font-family: $text-font;
 }
 /*
@@ -28,51 +34,52 @@ p,a{
   left: 0;
 }
 */
-
 //navbar
-.navbar{
+
+.navbar {
   background-color: $blue;
   color: $white;
-  position: fixed ;
+  position: fixed;
   width: 100%;
   z-index: 100;
 
-  button{
+  button {
     font-size: 2.5rem;
     width: 100%;
-    span{
-      color:$white;
 
+    span {
+      color: $white;
     }
-    .navbar-brand{
+
+    .navbar-brand {
       color: $white;
       font-size: inherit;
     }
   }
 }
 
-.navbar-nav{
+.navbar-nav {
   font-size: 2rem;
+
   .nav-item {
     padding: 1rem;
     @include navbar-navitem-border;
-    a{color:$white;}
 
-    .dropdown-menu{
+    a {
+      color: $white;
+    }
+
+    .dropdown-menu {
       background-color: $white;
       border-radius: 0;
       font-size: 1.5rem;
-      a{color:$blue;}
-     }
+
+      a {
+        color: $blue;
+      }
+    }
   }
 }
-
-
-
-
-
-
-
 
 .container {
   max-width: none;
@@ -107,7 +114,6 @@ p,a{
   top: 100vh;
   width: 100%;
 
-
   .content-header {
     margin-top: 0;
     font-family: $header-font;
@@ -116,10 +122,6 @@ p,a{
       margin: 0 auto;
     }
   }
-
-
-
-
   //Testimonals
   .testimonial-1 {
     background-color: $blue;
@@ -154,11 +156,51 @@ p,a{
   .testimonial-6 {
     color: $blue;
     background-color: $white;
-    h6{font-size: 3rem;}
+
+    h6 {
+      font-size: 3rem;
+    }
     @include testimonial-base-styles;
   }
+  //Fake Cars
+  .fake-cars-wrapper {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
+    .fake-cars-logos {
+      .row {
+        height: 300px;
 
+        div {
+          @include background-image-settings-contain;
+        }
+      }
+
+      .fake-1 {
+        background-image: url("/assets/fake-logos/fake-aston-300x300.png");
+      }
+
+      .fake-2 {
+        background-image: url("/assets/fake-logos/fake-audi-300x300.png");
+      }
+
+      .fake-3 {
+        background-image: url("/assets/fake-logos/fake-ferrari-300x300.png");
+      }
+
+      .fake-4 {
+        background-image: url("/assets/fake-logos/fake-honda-300x300.png");
+      }
+
+      .fake-5 {
+        background-image: url("/assets/fake-logos/fake-tesla-300x300.png");
+      }
+
+      .fake-6 {
+        background-image: url("/assets/fake-logos/fake-aston-300x300.png");
+      }
+    }
+  }
 
   .text-area-1 {
     background-image: url("/assets/tier-s/chiron.png");
@@ -167,6 +209,7 @@ p,a{
   .text-area-2 {
     background-image: url("/assets/tier-1/ferrari.jpeg");
   }
+
   .text-area-3 {
     background-image: url("/assets/tier-2/bmwi8.jpg");
   }
@@ -195,7 +238,9 @@ p,a{
     }
   }
 
-.carousel-indicators{display: none;}
+  .carousel-indicators {
+    display: none;
+  }
 
   .carousel-item {
     @include generic-background-image-settings;
@@ -260,23 +305,63 @@ p,a{
 }
 //Footer
 
-
 .footer {
   div {
     //height: 100%;
     min-height: 150px;
+    padding-top: 1rem;
     text-align: center;
+
+    h4 {
+      font-size: 2rem;
+      text-decoration: underline;
+    }
   }
 
   .column-1 {
-    background-color: red;
+    background-color: $blue;
+    color: $white;
+    @include first-2-column-styling;
   }
 
   .column-2 {
-    background-color: yellow;
+    background-color: $blue;
+    color: $white;
+    @include first-2-column-styling;
   }
 
   .column-3 {
-    background-color: purple;
+    background-color: $blue;
+    border-top: 1px solid rgba(255, 255, 255, 0.058823529411764705);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.058823529411764705);
+    color: $white;
+    padding-top: 2rem;
+
+    div {
+      p {
+        max-height: 100px;
+        @include background-image-settings-contain;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .fb {
+        background-image: url("/assets/footer-icons/fb-100x100.png");
+      }
+
+      .instagram {
+        background-image: url("/assets/footer-icons/instagram-100x100.png");
+      }
+
+      .twitter {
+        background-image: url("/assets/footer-icons/twitter-100x100.png");
+      }
+
+      .youtube {
+        background-image: url("/assets/footer-icons/youtube-100x100.png");
+      }
+    }
   }
 }
