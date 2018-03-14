@@ -122,6 +122,9 @@ p {
   .content-header {
     margin-top: 0;
     font-family: $header-font;
+    background-image: url("/assets/logo/v1.png");
+
+    @include background-image-settings-contain;
 
     h1 {
       margin: 0 auto;
@@ -156,6 +159,10 @@ p {
     color: $white;
     background-color: $blue;
     @include testimonial-base-styles;
+
+    div{
+      .row{padding-top: 2rem;}
+    }
   }
 
   .testimonial-6 {
@@ -173,9 +180,11 @@ p {
     padding-bottom: 10rem;
 
     .fake-cars-logos {
+      max-width: none;
+
       .row {
         height: 300px;
-
+        max-width: none;
         div {
           @include background-image-settings-contain;
         }
@@ -217,6 +226,21 @@ p {
     .text-area-text {
       @include text-area-style;
       text-align: center;
+
+      .text-area-button{
+        position: relative;
+        width: 100%;
+        a{
+          color: $white;
+          border: 1px solid rgba(255,255,255, 0.5);
+          font-size: 1.5rem;
+          &:hover{
+            background-color: $blue;
+            color: $white;
+
+          }
+        }
+      }
     }
   }
   .text-area-1 {
@@ -227,7 +251,16 @@ p {
       text-decoration: underline;
     }
     .text-area-text{
-      color:#C98504;
+      color:$orange;
+
+      .text-area-button{
+        a{
+          &:hover{
+            background-color: $orange;
+            color: $white;
+          }
+        }
+      }
     }
   }
 
@@ -345,9 +378,19 @@ p {
 //Footer
 
 .footer {
-  div {
+  .social-media-icons {
     //height: 100%;
     min-height: 150px;
+    padding-top: 1rem;
+    text-align: center;
+
+    h4 {
+      font-size: 2rem;
+      text-decoration: underline;
+    }
+  }
+
+  div{
     padding-top: 1rem;
     text-align: center;
 
