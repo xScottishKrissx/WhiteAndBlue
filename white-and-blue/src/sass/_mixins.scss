@@ -1,5 +1,5 @@
 @mixin text-area-style {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   color: white;
   font-size: 2rem;
 }
@@ -16,8 +16,8 @@
 }
 
 @mixin testimonial-base-styles {
-  padding-bottom: 5rem;
-  padding-top:5em;
+  padding-bottom: 15rem;
+  padding-top:10em;
   text-align: center;
 }
 

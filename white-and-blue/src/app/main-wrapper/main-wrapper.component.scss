@@ -1,6 +1,6 @@
 @import "src/sass/variables";
 @import "src/sass/mixins";
-@import "src/sass/media-queries"; //*{border:5px solid black}
+
 
 h1,
 h2,
@@ -206,9 +206,29 @@ p {
       }
     }
   }
+  .text-area {
+    @include generic-background-image-settings;
+    min-height: 50vh;
 
+    .text-area-header {
+      @include text-area-style;
+    }
+
+    .text-area-text {
+      @include text-area-style;
+      text-align: center;
+    }
+  }
   .text-area-1 {
     background-image: url("/assets/tier-s/chiron.png");
+    text-align: center;
+    .text-area-header{
+      color: $orange;
+      text-decoration: underline;
+    }
+    .text-area-text{
+      color:#C98504;
+    }
   }
 
   .text-area-2 {
@@ -223,19 +243,7 @@ p {
     background-image: url("/assets/tier-3/skyline-r34-gtr.jpg");
   }
 
-  .text-area {
-    @include generic-background-image-settings;
-    min-height: 50vh;
 
-    .text-area-header {
-      @include text-area-style;
-    }
-
-    .text-area-text {
-      @include text-area-style;
-      text-align: center;
-    }
-  }
   //Slider
   .slider {
     .col {
@@ -252,6 +260,32 @@ p {
     height: 100vh;
     min-height: 400px;
     max-height: 600px;
+
+    .container{
+      .carousel-caption{
+        background-color: rgba(0,0,0,0.5);
+        border-bottom: 1px solid $white;
+        left: 0;
+        right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        ul{
+          list-style-type: none;
+        }
+        .caption-button{
+          //background-color: red;
+          border-top: 1px solid white;
+          text-align: right;
+          float:right;
+          width: 150px;
+          a{
+            color:$white;
+            &:hover{text-decoration: underline;}
+          }
+
+        }
+      }
+    }
   }
 
   .slider-image-1 {
@@ -370,3 +404,4 @@ p {
     }
   }
 }
+@import "src/sass/media-queries"; //*{border:5px solid black}

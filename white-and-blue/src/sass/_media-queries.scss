@@ -1,26 +1,49 @@
-@media (min-width: $breakpoint-tablet) {
-  .text-area-header {
-    text-align: center;
-  }
-  .carousel{
-      .carousel-control-next, .carousel-control-prev{
-        font-size: 5rem;
-        //box-shadow: -5px -5px 20px 0 $blue;
-        //background-color: red;
-        &:hover{
-          background-color: rgba(0, 0, 0, 0.25);
-
+@media only screen and (min-width: $breakpoint-tablet) {
+  .carousel {
+    .carousel-inner{
+      .carousel-item{
+        .container{
+          .carousel-caption{
+            padding-left: 15%;
+            padding-right: 15%;
+          }
         }
       }
+    }
+
+
+
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      font-size: 5rem;
+      //box-shadow: -5px -5px 20px 0 $blue;
+      //background-color: red;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+    }
   }
-  .second-layer{
 
+  .second-layer {
+    .text-area {
+      .text-area-header {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 5rem;
+        padding-top: 5rem;
+      }
 
+      .text-area-text {
+        background-color: rgba(0, 0, 0, 0.75);
+        font-size: 2.5rem;
+        padding-top: 10rem;
+      }
+    }
 
-    .footer{
-      .column-3{
-        border-top:0px;
-        border-bottom:0px;
+    .footer {
+      .column-3 {
+        border-top: 0;
+        border-bottom: 0;
       }
     }
   }
@@ -30,45 +53,49 @@
     text-align: center;
   }
 
-  .navbar-nav{
-      li{
-        text-align: center;
-        &:hover > div{
-          display:block;
-        }
-      }
-        li:nth-child(2){
-          width: 18.6rem;
+  .navbar-nav {
+    li {
+      text-align: center;
 
-
-        }
-        li:nth-child(3){
-          width: 22.4rem;
-        }
-        li:nth-child(4){
-          width: 18.4rem;
-        }
-        li:nth-child(5){
-          width: 21.8rem;
-        }
-
-      .dropdown-menu{
-        border-left: 1rem solid $blue;
-        padding: 0;
-        background-color: $white;
-
-        transition: background-color 1s;
-        a{
-          &:hover{
-            background-color: $blue;
-            color:$white !important;
-          }
-        }
+      &:hover > div {
+        display: block;
       }
     }
 
+    li:nth-child(2) {
+      width: 18.6rem;
+    }
+
+    li:nth-child(3) {
+      width: 22.4rem;
+    }
+
+    li:nth-child(4) {
+      width: 18.4rem;
+    }
+
+    li:nth-child(5) {
+      width: 21.8rem;
+    }
+
+    .dropdown-menu {
+      border-left: 1rem solid $blue;
+      padding: 0;
+      background-color: $white;
+      transition: background-color 1s;
+
+      a {
+        &:hover {
+          background-color: $blue;
+          color: $white !important;
+        }
+      }
+    }
+  }
 
   .second-layer {
+
+
     .gallery {
       div {
         transition: background-position-y $gallery-transition-time;

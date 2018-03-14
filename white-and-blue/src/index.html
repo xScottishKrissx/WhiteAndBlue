@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>WhiteAndBlue</title>
@@ -21,11 +22,37 @@
 
 
   <app-root></app-root>
+
   <!-- Bootstrap js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+
+  <script type="text/javascript">
+  //angular.element("text-area-1")[0].style.height = "100px";
+  //angular.element('.text-area-header').css('text-decoration-color', 'red');
+  //console.log(angular.element(document).find(".text-area-1").);
+  
+    console.log(getRandomNumber(1, 5));
+    //.style.backgroundImage="url('/assets/tier-s/" + getRandomNumber + ".jpg')";
+    function doThing() {
+      var textArea1 = document.getElementsByClassName("text-area-1");
+      console.log(textArea1)
+      for (let item of textArea1) {
+        console.log(item);
+        style.backgroundImage = "url('/assets/tier-s/" + getRandomNumber + ".jpg')";
+      }
+    }
+    console.log(doThing());
+
+
+
+    function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min
+    }
+  </script>
 </body>
+
 </html>
