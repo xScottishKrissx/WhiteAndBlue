@@ -96,8 +96,8 @@ p {
 .first-layer {
   height: 100vh;
   //background-color: blue;
-  background-image: url("/assets/map.jpg");
-  @include generic-background-image-settings;
+  background-image: url("/assets/fixed-image/map-575px.png");
+  @include background-image-settings-contain;
   color: $white;
   font-size: 15rem;
   padding: 0;
@@ -131,6 +131,26 @@ p {
     }
   }
   //Testimonals
+  .testimonial-0 {
+    background-color: $blue;
+    color: $white;
+    @include testimonial-base-styles;
+
+    .row{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      img{
+        height: 100%;
+      }
+      div{
+        h2{padding-top: 2rem;}
+
+        .myButton{
+          @include standard-button-white-hover;
+        }
+      }
+    }
+  }
   .testimonial-1 {
     background-color: $blue;
     color: $white;

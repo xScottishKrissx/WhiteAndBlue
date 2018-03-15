@@ -1,4 +1,18 @@
+@media only screen and (min-width: $breakpoint-phablet) {
+  .second-layer{
+    .testimonial-0{
+      .row{
+        div{
+        h2{padding: 0;}
+        }
+      }
+    }
+  }
+}
 @media only screen and (min-width: $breakpoint-tablet) {
+  .first-layer{
+    background-image: url("/assets/fixed-image/map-tablet.png");
+  }
   .carousel {
     .carousel-inner{
       .carousel-item{
@@ -40,6 +54,16 @@
       }
 
     }
+    .testimonial-0{
+      .row{
+        div{
+          .myButton{
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
 
     .footer {
       .column-3 {
@@ -49,6 +73,23 @@
     }
   }
 }
+@media only screen and (min-width: $breakpoint-bootstrap-lg) {
+  .first-layer{
+    background-image: url("/assets/fixed-image/map-992px.png");
+  }
+  .second-layer{
+  .testimonial-0{
+    .row{
+      div{
+        .myButton{
+          position: relative;
+        }
+      }
+    }
+  }
+}
+}
+
 @media only screen and (min-width: $breakpoint-laptop) {
   .text-area-header {
     text-align: center;
@@ -97,6 +138,7 @@
   .second-layer {
 
 
+
     .gallery {
       div {
         transition: background-position-y $gallery-transition-time;
@@ -129,4 +171,47 @@
       }
     }
   }
+}
+
+@media only screen and (min-width: $breakpoint-1080p) {
+.second-layer{
+  .testimonials{
+    @include testimonial-base-styles-1080p;
+  }
+
+  .text-area{
+    .text-area-text{
+      font-size: 4.5rem;
+    }
+  }
+
+  .carousel {
+    .carousel-inner{
+      .carousel-item{
+        .container{
+          .carousel-caption{
+          @include carousel-caption-1080p;
+          }
+        }
+      }
+    }
+
+
+
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      font-size: 5rem;
+      //box-shadow: -5px -5px 20px 0 $blue;
+      //background-color: red;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+}
+@media only screen and (min-width: $breakpoint-2K) {
+
 }

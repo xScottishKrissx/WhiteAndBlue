@@ -4,6 +4,7 @@
   font-size: 2rem;
 }
 
+
 @mixin generic-background-image-settings {
   background-position: center;
   background-size: cover;
@@ -24,6 +25,18 @@
     max-width: 900px;
     margin: 0 auto;
   }
+
+}
+
+@mixin testimonial-base-styles-1080p {
+    font-size: 2rem;
+    div{
+      max-width: 1200px;
+      h2{font-size: 3rem;}
+      div{
+        h3{font-size: 2.75rem;}
+      }
+    }
 }
 
 
@@ -38,6 +51,31 @@
   div{
     div{
       padding: 0;
+    }
+  }
+}
+
+@mixin standard-button-white-hover {
+  position: relative;
+  width: 100%;
+  a{
+    color: $white;
+    border: 1px solid rgba(255,255,255, 0.5);
+    font-size: 1.5rem;
+    &:hover{
+      background-color: $white;
+      color: $blue;
+
+    }
+  }
+}
+
+
+@mixin carousel-caption-1080p {
+  font-size: 3rem;
+  .caption-button{
+    a{
+      font-size: 2rem;
     }
   }
 }
