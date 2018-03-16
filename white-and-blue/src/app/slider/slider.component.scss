@@ -1,0 +1,74 @@
+@import "src/sass/variables";
+@import "src/sass/mixins";
+
+.slider {
+  .col {
+    padding: 0;
+  }
+
+  .glyphicon {
+    position: absolute;
+    bottom: 30px;
+    top: auto;
+  }
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-item {
+  @include generic-background-image-settings;
+  height: 100vh;
+  min-height: 400px;
+  max-height: 600px;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+
+  .container {
+    .carousel-caption {
+      background-color: rgba(0,0,0,0.5);
+      border-bottom: 1px solid $white;
+      left: 0;
+      right: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+
+      ul {
+        list-style-type: none;
+      }
+
+      .caption-button {
+        //background-color: red;
+        border-top: 1px solid white;
+        text-align: right;
+        float: right;
+        width: 150px;
+
+        a {
+          color: $white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slider-image-1 {
+  background-image: url("/assets/slider/ferrari.jpeg");
+}
+
+.slider-image-2 {
+  background-image: url("/assets/slider/lambo.jpeg");
+}
+
+.slider-image-3 {
+  background-image: url("/assets/slider/lancia.jpeg");
+}
+@import "src/sass/media-queries"; //*{border:5px solid black}

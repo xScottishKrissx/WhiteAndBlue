@@ -1,2 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "src/sass/_variables";
+@import "src/sass/_mixins";
+
+.container {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@import "src/sass/media-queries";

@@ -3,79 +3,182 @@
   color: white;
   font-size: 2rem;
 }
+@mixin text-area-button-default {
+  .text-area-button {
+    position: relative;
+    width: 100%;
 
+    a {
+      color: $white;
+      border: 1px solid rgba(255,255,255, 0.5);
+      font-size: 1.5rem;
 
+      &:hover {
+        background-color: $blue;
+        color: $white;
+      }
+    }
+  }
+}
+@mixin text-area-button-2K {
+  .text-area-button {
+    a {
+      font-size: 3rem;
+    }
+  }
+}
 @mixin generic-background-image-settings {
   background-position: center;
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 }
 @mixin background-image-settings-contain {
   background-position: center;
   background-size: contain;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 }
-
 @mixin testimonial-base-styles {
-
   padding-bottom: 10rem;
-  padding-top:5em;
+  padding-top: 2em;
   text-align: left;
-  div{
-    max-width: 900px;
+
+  div {
+    max-width: 959px;
     margin: 0 auto;
   }
-
 }
-
 @mixin testimonial-base-styles-1080p {
+  font-size: 2rem;
+
+  .introduction-para {
     font-size: 2rem;
-    div{
-      max-width: 1200px;
-      h2{font-size: 3rem;}
-      div{
-        h3{font-size: 2.75rem;}
+  }
+
+  div {
+    max-width: 1280px;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    div {
+      h3 {
+        font-size: 2.75rem;
       }
     }
+  }
 }
+@mixin testimonial-base-styles-2K {
+  font-size: 3rem;
 
+  div {
+    max-width: 2000px;
 
+    h2 {
+      font-size: $h2-2K;
+    }
+
+    div {
+      h3 {
+        font-size: $h3-2K;
+      }
+
+      div {
+        h4 {
+          font-size: $h4-2K;
+        }
+      }
+    }
+  }
+}
 @mixin navbar-navitem-border {
-  border-left:1px solid;
-  border-left-color:rgba(255, 255, 255, 0.058823529411764705);
+  border-left: 1px solid;
+  border-left-color: rgba(255, 255, 255, 0.058823529411764705);
   border-right: 1px solid;
   border-right-color: rgba(255, 255, 255, 0.058823529411764705);
 }
-
 @mixin first-2-column-styling {
-  div{
-    div{
+  div {
+    div {
       padding: 0;
     }
   }
 }
-
 @mixin standard-button-white-hover {
   position: relative;
   width: 100%;
-  a{
+
+  a {
     color: $white;
     border: 1px solid rgba(255,255,255, 0.5);
     font-size: 1.5rem;
-    &:hover{
+
+    &:hover {
       background-color: $white;
       color: $blue;
-
     }
   }
 }
+@mixin carousel-2K {
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        max-height: 1000px;
 
-
+        .container {
+          .carousel-caption {
+            padding-left: 15%;
+            padding-right: 15%;
+          }
+        }
+      }
+    }
+  }
+}
 @mixin carousel-caption-1080p {
   font-size: 3rem;
-  .caption-button{
-    a{
+
+  .caption-button {
+    a {
       font-size: 2rem;
+    }
+  }
+}
+@mixin default-gallery-settings {
+  div {
+    transition: background-position-y $gallery-transition-time;
+    background-position-y: 0;
+
+    &:hover {
+      background-position-y: 10rem;
+      cursor: pointer;
+    }
+
+    &:hover p {
+      opacity: 2.0;
+    }
+
+    p {
+      background-color: rgba(0, 0, 0, 0);
+      color: white;
+      font-size: 1.2rem;
+      height: 100%;
+      opacity: 0;
+      padding-top: 2.5rem;
+      transition: opacity $gallery-transition-time;
+    }
+  }
+}
+@mixin gallery-settings-2K {
+  div {
+    height: 245px;
+
+    &:hover {
+      background-position-y: 20rem;
+    }
+
+    p {
+      font-size: 4.5rem;
     }
   }
 }

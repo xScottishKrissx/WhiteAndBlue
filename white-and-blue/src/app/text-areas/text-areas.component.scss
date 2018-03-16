@@ -1,0 +1,119 @@
+@import "src/sass/variables";
+@import "src/sass/mixins";
+
+//Testimonals
+.testimonial-0 {
+  background-color: $blue;
+  color: $white;
+  @include testimonial-base-styles;
+
+  .row{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    img{
+      height: 100%;
+    }
+    div{
+      h2{padding-top: 2rem;}
+
+      .myButton{
+        @include standard-button-white-hover;
+      }
+    }
+  }
+}
+.testimonial-1 {
+  background-color: $blue;
+  color: $white;
+  @include testimonial-base-styles;
+}
+
+.testimonial-2 {
+  color: $blue;
+  background-color: $white;
+  @include testimonial-base-styles;
+}
+
+.testimonial-3 {
+  background-color: $blue;
+  color: $white;
+  @include testimonial-base-styles;
+}
+
+.testimonial-4 {
+  color: $blue;
+  background-color: $white;
+  @include testimonial-base-styles;
+}
+
+.testimonial-5 {
+  color: $white;
+  background-color: $blue;
+  @include testimonial-base-styles;
+
+  div{
+    .row{padding-top: 2rem;}
+  }
+}
+
+.testimonial-6 {
+  color: $blue;
+  background-color: $white;
+
+  h6 {
+    font-size: 3rem;
+  }
+  @include testimonial-base-styles;
+}
+
+.text-area {
+  @include generic-background-image-settings;
+  min-height: 50vh;
+
+  .text-area-header {
+    @include text-area-style;
+  }
+
+  .text-area-text {
+    @include text-area-style;
+    text-align: center;
+    @include text-area-button-default;
+
+  }
+}
+.text-area-1 {
+  background-image: url("/assets/tier-s/chiron.png");
+  text-align: center;
+  .text-area-header{
+    color: $orange;
+    text-decoration: underline;
+  }
+  .text-area-text{
+    color:$orange;
+
+    .text-area-button{
+      a{
+        &:hover{
+          background-color: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.text-area-2 {
+  background-image: url("/assets/tier-1/ferrari.jpeg");
+}
+
+.text-area-3 {
+  background-image: url("/assets/tier-2/bmwi8.jpg");
+}
+
+.text-area-4 {
+  background-image: url("/assets/tier-3/skyline-r34-gtr.jpg");
+}
+
+
+
+@import "src/sass/media-queries"; //*{border:5px solid black}

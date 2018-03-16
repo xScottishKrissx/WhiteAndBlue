@@ -1,0 +1,49 @@
+@import "src/sass/variables";
+@import "src/sass/mixins";
+
+.navbar {
+  background-color: $blue;
+  color: $white;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  button {
+    font-size: 2.5rem;
+    width: 100%;
+
+    span {
+      color: $white;
+    }
+
+    .navbar-brand {
+      color: $white;
+      font-size: inherit;
+    }
+  }
+}
+
+.navbar-nav {
+  font-size: 2rem;
+
+  .nav-item {
+    padding: 1rem;
+    @include navbar-navitem-border;
+
+    a {
+      color: $white;
+    }
+
+    .dropdown-menu {
+      background-color: $white;
+      border-radius: 0;
+      font-size: 1.5rem;
+
+      a {
+        color: $blue;
+        line-height: 5rem;
+      }
+    }
+  }
+}
+@import "src/sass/media-queries"; //*{border:5px solid black}

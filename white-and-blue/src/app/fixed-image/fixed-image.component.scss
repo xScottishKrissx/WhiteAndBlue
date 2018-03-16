@@ -1,0 +1,20 @@
+@import "src/sass/variables";
+@import "src/sass/mixins";
+
+.first-layer {
+  height: 100vh;
+  //background-color: blue;
+  background-image: url("/assets/fixed-image/map-575px.png");
+  @include background-image-settings-contain;
+  color: $white;
+  font-size: 15rem;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+
+  video{
+    width: 100%;
+  }
+}
+
+@import "src/sass/media-queries";

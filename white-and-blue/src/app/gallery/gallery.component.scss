@@ -1,0 +1,45 @@
+@import "src/sass/variables";
+@import "src/sass/mixins";
+
+.gallery {
+  div {
+    @include generic-background-image-settings;
+    height: 125px;
+    padding: 0;
+    text-align: center;
+
+    p {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: $white;
+      font-size: 1.2rem;
+      height: 100%;
+      padding-top: 2.5rem;
+    }
+  }
+
+  .events {
+    background-image: url("/assets/gallery/event.jpg");
+  }
+
+  .family {
+    background-image: url("/assets/gallery/family.jpg");
+  }
+
+  .tutorials {
+    background-image: url("/assets/gallery/tutorials.jpg");
+  }
+
+  .youtube {
+    background-image: url("/assets/gallery/youtube.jpg");
+  }
+
+  .instagram {
+    background-image: url("/assets/gallery/instagram.jpg");
+  }
+
+  .twitter {
+    background-image: url("/assets/gallery/twitter.jpg");
+  }
+}
+
+@import "src/sass/media-queries";

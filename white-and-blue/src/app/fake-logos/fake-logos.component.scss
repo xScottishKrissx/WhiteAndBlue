@@ -1,0 +1,46 @@
+@import "src/sass/variables";
+@import "src/sass/mixins";
+
+.fake-cars-wrapper {
+  background-color: $white;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  .fake-cars-logos {
+    max-width: none;
+
+    .row {
+      height: 300px;
+      max-width: none;
+      div {
+        @include background-image-settings-contain;
+      }
+    }
+
+    .fake-1 {
+      background-image: url("/assets/fake-logos/fake-aston-300x300.png");
+    }
+
+    .fake-2 {
+      background-image: url("/assets/fake-logos/fake-audi-300x300.png");
+    }
+
+    .fake-3 {
+      background-image: url("/assets/fake-logos/fake-ferrari-300x300.png");
+    }
+
+    .fake-4 {
+      background-image: url("/assets/fake-logos/fake-honda-300x300.png");
+    }
+
+    .fake-5 {
+      background-image: url("/assets/fake-logos/fake-tesla-300x300.png");
+    }
+
+    .fake-6 {
+      background-image: url("/assets/fake-logos/fake-ford-300x300.png");
+    }
+  }
+}
+
+@import "src/sass/media-queries";
